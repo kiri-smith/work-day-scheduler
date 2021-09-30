@@ -184,15 +184,15 @@ if (17 < currentHour) {
 
 }
 
-var saveButton = document.querySelector(".save-button");
+//var saveButton = document.querySelector(".save-button");
 
-saveButton.addEventListener("click", function () {
+$(".save-button").on("click", function () {
     var buttonClick = $(this).attr("id");
-    var content = $(this).parent().siblings().children(".text-area").val();
+    var content = $(this).siblings(".text-area").val();
 
     console.log(buttonClick);
     console.log(content);
-    console.log(this.parent());
+    // console.log(this.parent());
 
     localStorage.setItem(buttonClick, content);
 })
