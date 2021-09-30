@@ -184,10 +184,24 @@ if (17 < currentHour) {
 
 }
 
+var saveButton = document.querySelector(".save-button");
+
+saveButton.addEventListener("click", function () {
+    var buttonClick = $(this).attr("id");
+    var content = $(this).parent().siblings().children(".text-area").val();
+
+    console.log(buttonClick);
+    console.log(content);
+    console.log(this.parent());
+
+    localStorage.setItem(buttonClick, content);
+})
+
+
 //input text to text column--save to local storage on click
 //inputted in textarea row -- do i add a new id for each row?
 
-var hourNineText = document.querySelector("#text-9");
+/*var hourNineText = document.querySelector("#text-9");
 var hourNineSave = document.querySelector("#save-9");
 var savedNine = document.querySelector("#text-9");
 var hourNineTextEl = $("#text-9");
@@ -210,7 +224,7 @@ var hourTenSave = document.querySelector("#save-10");
 var savedTen = document.querySelector("#text-10");
 var hourTenTextEl = $("#text-10");
 
-/*hourTenSave.addEventListener("click", saveTen);
+hourTenSave.addEventListener("click", saveTen);
 
 savedTen.textContent = localStorage.getItem("content");
 hourTenText.value = localStorage.getItem("content");
@@ -221,7 +235,7 @@ function saveTen() {
     hourTenTextEl.text(hourTenText.value);
 }*/
 
-
+/*
 var hourElevenText = document.querySelector("#text-11");
 var hourElevenSave = document.querySelector("#save-11");
 
@@ -243,4 +257,4 @@ var hourSixteenSave = document.querySelector("#save-16");
 var hourSeventeenText = document.querySelector("#text-17");
 var hourSeventeenSave = document.querySelector("#save-17");
 
-
+*/
