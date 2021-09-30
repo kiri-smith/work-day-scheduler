@@ -185,3 +185,33 @@ if (17 < currentHour) {
 }
 
 //input text to text column--save to local storage on click
+//inputted in textarea row -- do i add a new id for each row?
+
+var hourNineText = document.querySelector("#text-9");
+var hourNineSave = document.querySelector("#save-9");
+
+var hourTenText = document.querySelector("#text-10");
+var hourTenSave = document.querySelector("#save-10");
+
+var hourElevenText = document.querySelector("#text-11");
+var hourElevenSave = document.querySelector("#save-11");
+
+var hourTwelveText = document.querySelector("#text-12");
+var hourTwelveSave = document.querySelector("#save-12");
+
+var hourThirteenText = document.querySelector("#text-13");
+var hourThirteenSave = document.querySelector("#save-13");
+
+var hourFourteenText = document.querySelector("#text-14");
+var hourFourteenSave = document.querySelector("#save-14");
+
+var hourFifteenText = document.querySelector("#text-15");
+var hourFifteenSave = document.querySelector("#save-15");
+
+var hourSixteenText = document.querySelector("#text-16");
+var hourSixteenSave = document.querySelector("#save-16");
+
+var hourSeventeenText = document.querySelector("#text-17");
+var hourSeventeenSave = document.querySelector("#save-17");
+
+
