@@ -192,12 +192,13 @@ $(".save-button").on("click", function () {
 
     console.log(buttonClick);
     console.log(content);
-    // console.log(this.parent());
 
     localStorage.setItem(buttonClick, content);
 })
 
+localStorage.getItem(content);
 
+//localStorage.getItem(" ", content);
 //input text to text column--save to local storage on click
 //inputted in textarea row -- do i add a new id for each row?
 
