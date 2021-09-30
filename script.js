@@ -189,9 +189,38 @@ if (17 < currentHour) {
 
 var hourNineText = document.querySelector("#text-9");
 var hourNineSave = document.querySelector("#save-9");
+var savedNine = document.querySelector("#text-9");
+var hourNineTextEl = $("#text-9");
+
+hourNineSave.addEventListener("click", saveNine);
+
+savedNine.textContent = localStorage.getItem("content");
+hourNineText.value = localStorage.getItem("content");
+
+function saveNine() {
+    localStorage.setItem("content", hourNineText.value);
+
+    hourNineTextEl.text(hourNineText.value);
+}
+
+//works by itself but when i use a similar strategy below--everything duplicates???
 
 var hourTenText = document.querySelector("#text-10");
 var hourTenSave = document.querySelector("#save-10");
+var savedTen = document.querySelector("#text-10");
+var hourTenTextEl = $("#text-10");
+
+/*hourTenSave.addEventListener("click", saveTen);
+
+savedTen.textContent = localStorage.getItem("content");
+hourTenText.value = localStorage.getItem("content");
+
+function saveTen() {
+    localStorage.setItem("content", hourTenText.value);
+
+    hourTenTextEl.text(hourTenText.value);
+}*/
+
 
 var hourElevenText = document.querySelector("#text-11");
 var hourElevenSave = document.querySelector("#save-11");
