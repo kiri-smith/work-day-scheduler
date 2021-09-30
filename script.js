@@ -1,35 +1,187 @@
 var $currentDay = $("#currentDay");
 var $hourBlocks = $(".hour-blocks");
 var $workDayScheduler = $(".work-day-scheduler");
-
+var currentDate = moment().format("dddd MMMM Do YYYY");
 var currentHour = moment().format("H");
+var hourNineEl = $('.data-hour-9');
+var hourTenEl = $('.data-hour-10');
+var hourElevenEl = $('.data-hour-11');
+var hourTwelveEl = $('.data-hour-12');
+var hourThirteenEl = $('.data-hour-13');
+var hourFourteenEl = $('.data-hour-14');
+var hourFifteenEl = $('.data-hour-15');
+var hourSixteenEl = $('.data-hour-16');
+var hourSeventeenEl = $('.data-hour-17');
+
 
 //open scheduler when nothing is inputted yet--when document loads
-
 //display currentDate
 
-var currentDate = moment().format("dddd MMMM Do YYYY");
-$("#time-stamp").text(currentDate);
+$currentDay.text(currentDate);
 
-
-//input text to text column--save to local storage on click
 
 //add different colors to show past, present and future hours
 
-var dataHour = ".data-hour"
+//9 o'clock row
 
-if (dataHour < currentHour) {
+if (9 < currentHour) {
 
-    //style it green
+    hourNineEl.css({ backgroundColor: "green" });
 
 } else if
 
-    (dataHour > currentHour) {
+    (9 > currentHour) {
 
-    //style it gray
+    hourNineEl.css({ backgroundColor: "gray" });
+
 } else {
 
-    //style it red;
+    hourNineEl.css({ backgroundColor: "red" });
 
 }
 
+//10 o'clock row
+
+if (10 < currentHour) {
+
+    hourTenEl.css({ backgroundColor: "green" });
+
+} else if
+
+    (10 > currentHour) {
+
+    hourTenEl.css({ backgroundColor: "gray" });
+
+} else {
+
+    hourTenEl.css({ backgroundColor: "red" });
+
+}
+
+//11 o'clock row
+
+if (11 < currentHour) {
+
+    hourElevenEl.css({ backgroundColor: "green" });
+
+} else if
+
+    (11 > currentHour) {
+
+    hourElevenEl.css({ backgroundColor: "gray" });
+
+} else {
+
+    hourElevenEl.css({ backgroundColor: "red" });
+
+}
+
+//12 o'clock row
+
+if (12 < currentHour) {
+
+    hourTwelveEl.css({ backgroundColor: "green" });
+
+} else if
+
+    (12 > currentHour) {
+
+    hourTwelveEl.css({ backgroundColor: "gray" });
+
+} else {
+
+    hourTwelveEl.css({ backgroundColor: "red" });
+
+}
+
+//1 o'clock row (hour 13)
+
+if (13 < currentHour) {
+
+    hourThirteenEl.css({ backgroundColor: "green" });
+
+} else if
+
+    (13 > currentHour) {
+
+    hourThirteenEl.css({ backgroundColor: "gray" });
+
+} else {
+
+    hourThirteenEl.css({ backgroundColor: "red" });
+
+}
+
+//2 o'clock row (hour 14)
+
+if (14 < currentHour) {
+
+    hourFourteenEl.css({ backgroundColor: "green" });
+
+} else if
+
+    (14 > currentHour) {
+
+    hourFourteenEl.css({ backgroundColor: "gray" });
+
+} else {
+
+    hourFourteenEl.css({ backgroundColor: "red" });
+
+}
+
+//3 o'clock row (hour 15)
+
+if (15 < currentHour) {
+
+    hourFifteenEl.css({ backgroundColor: "green" });
+
+} else if
+
+    (15 > currentHour) {
+
+    hourFifteenEl.css({ backgroundColor: "gray" });
+
+} else {
+
+    hourFifteenEl.css({ backgroundColor: "red" });
+
+}
+
+//4 o'clock row (hour 16)
+
+if (16 < currentHour) {
+
+    hourSixteenEl.css({ backgroundColor: "green" });
+
+} else if
+
+    (16 > currentHour) {
+
+    hourSixteenEl.css({ backgroundColor: "gray" });
+
+} else {
+
+    hourSixteenEl.css({ backgroundColor: "red" });
+
+}
+
+//5 o'clock row (hour 17)
+
+if (17 < currentHour) {
+
+    hourSeventeenEl.css({ backgroundColor: "green" });
+
+} else if
+
+    (17 > currentHour) {
+
+    hourSeventeenEl.css({ backgroundColor: "gray" });
+
+} else {
+
+    hourSeventeenEl.css({ backgroundColor: "red" });
+
+}
+
+//input text to text column--save to local storage on click
