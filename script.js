@@ -42,13 +42,13 @@ if (9 < currentHour) {
 
 if (10 < currentHour) {
 
-    hourTenEl.css({ backgroundColor: "red" });
+    hourTenEl.css({ backgroundColor: "gray" });
 
 } else if
 
     (10 > currentHour) {
 
-    hourTenEl.css({ backgroundColor: "gray" });
+    hourTenEl.css({ backgroundColor: "red" });
 
 } else {
 
