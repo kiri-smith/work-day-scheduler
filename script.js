@@ -30,11 +30,11 @@ if (9 < currentHour) {
 
     (9 > currentHour) {
 
-    hourNineEl.css({ backgroundColor: "red" });
+    hourNineEl.css({ backgroundColor: "green" });
 
 } else {
 
-    hourNineEl.css({ backgroundColor: "green" });
+    hourNineEl.css({ backgroundColor: "red" });
 
 }
 
@@ -48,11 +48,11 @@ if (10 < currentHour) {
 
     (10 > currentHour) {
 
-    hourTenEl.css({ backgroundColor: "red" });
+    hourTenEl.css({ backgroundColor: "green" });
 
 } else {
 
-    hourTenEl.css({ backgroundColor: "green" });
+    hourTenEl.css({ backgroundColor: "red" });
 
 }
 
@@ -60,13 +60,13 @@ if (10 < currentHour) {
 
 if (11 < currentHour) {
 
-    hourElevenEl.css({ backgroundColor: "green" });
+    hourElevenEl.css({ backgroundColor: "gray" });
 
 } else if
 
     (11 > currentHour) {
 
-    hourElevenEl.css({ backgroundColor: "gray" });
+    hourElevenEl.css({ backgroundColor: "green" });
 
 } else {
 
