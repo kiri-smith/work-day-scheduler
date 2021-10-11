@@ -132,13 +132,13 @@ if (14 < currentHour) {
 
 if (15 < currentHour) {
 
-    hourFifteenEl.css({ backgroundColor: "green" });
+    hourFifteenEl.css({ backgroundColor: "gray" });
 
 } else if
 
     (15 > currentHour) {
 
-    hourFifteenEl.css({ backgroundColor: "gray" });
+    hourFifteenEl.css({ backgroundColor: "green" });
 
 } else {
 
