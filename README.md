@@ -4,7 +4,11 @@ For this project, I modified an existing repository so that when the Work Day Sc
 
 ## Snapshot
 
-<img src="SnapWDS.JPG" alt="Screenshot of Scheduler">
+<img src="snipupdate.JPG" alt="Screenshot of Scheduler">
+
+Content is saved to local storage and accessible even when the page is refreshed:
+
+<img src="savedstorage.JPG" alt="Screenshot of Scheduler">
 
 ## Built With
 
