@@ -24,7 +24,7 @@ $currentDay.text(currentDate);
 
 if (9 < currentHour) {
 
-    hourNineEl.css({ backgroundColor: "green" });
+    hourNineEl.css({ backgroundColor: "red" });
 
 } else if
 
@@ -34,7 +34,7 @@ if (9 < currentHour) {
 
 } else {
 
-    hourNineEl.css({ backgroundColor: "red" });
+    hourNineEl.css({ backgroundColor: "green" });
 
 }
 
@@ -42,7 +42,7 @@ if (9 < currentHour) {
 
 if (10 < currentHour) {
 
-    hourTenEl.css({ backgroundColor: "green" });
+    hourTenEl.css({ backgroundColor: "red" });
 
 } else if
 
@@ -52,7 +52,7 @@ if (10 < currentHour) {
 
 } else {
 
-    hourTenEl.css({ backgroundColor: "red" });
+    hourTenEl.css({ backgroundColor: "green" });
 
 }
 
