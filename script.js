@@ -24,13 +24,13 @@ $currentDay.text(currentDate);
 
 if (9 < currentHour) {
 
-    hourNineEl.css({ backgroundColor: "red" });
+    hourNineEl.css({ backgroundColor: "gray" });
 
 } else if
 
     (9 > currentHour) {
 
-    hourNineEl.css({ backgroundColor: "gray" });
+    hourNineEl.css({ backgroundColor: "red" });
 
 } else {
 
